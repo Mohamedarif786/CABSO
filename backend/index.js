@@ -17,6 +17,20 @@ app.use(
     parameterLimit: 100000,
   })
 );
+app.use(body_parser.json({limit: '50mb'}));
+app.use(body_parser.urlencoded({extended:true,limit: '50mb', parameterLimit: 100000,}));
+var mysql = require('mysql');
+
+// var con = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   database:'cabso'
+// });
+
+// con.connect(function(err) {
+//   if (err) throw err;
+//   console.log("Connected!");
+// })
 
 const db = require("./model/index.modal.js");
 db.sequelize

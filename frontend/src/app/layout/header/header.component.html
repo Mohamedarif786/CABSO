@@ -1,0 +1,22 @@
+<p>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)='menuToggle()'>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span></span>
+    <span class="example-spacer"></span>
+    <span class="dropdown">
+      <button mat-icon-button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" routerLink="/register" routerLinkActive="active">Settings</a></li>
+        <li><a class="dropdown-item" routerLink="/register" routerLinkActive="active">Logout</a></li>
+      </ul>
+    </span>
+  </mat-toolbar>
+</p>
+<!-- <div class="dropdown"> -->
+
+

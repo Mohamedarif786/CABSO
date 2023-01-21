@@ -1,6 +1,6 @@
 const env = require('dotenv')
 env.config()
-const pass ="pass";
+const pass ="";
 module.exports = {
     HOST: process.env.host,
     USER: process.env.username,
